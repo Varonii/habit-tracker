@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 class SiteController extends Controller
 {
-    public function index()
+    public function home()
     {
-        $name = 'Thiago';
-        $habits = ['read', 'play videogames', 'surf', 'study'];
+        $name = 'Seu Nome';
+        $habits = ['Estudar', 'Treinar', 'Ler'];
 
         return view('home', [
             'name' => $name,
-            'habits' => $habits
+            'habits' => $habits,
         ]);
     }
 }

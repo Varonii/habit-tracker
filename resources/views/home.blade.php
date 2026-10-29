@@ -1,17 +1,14 @@
-<h1>
-    welcome to the home page
-</h1>
-
-<p>
-    Hi, {{ $name }}!
-</p>
-<p>
-    Your Habits are:
-</p>
-<ul>
-    @foreach($habits as $habit)
-        <li>
-            {{ $habit }}
-        </li>
-    @endforeach
-</ul>
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ config('app.name') }}</title>
+        @vite('resources/css/app.css')
+    </head>
+    <body>
+        <h1 class="text-3xl font-bold underline">
+            Hello!
+        </h1>
+    </body>
+</html>
